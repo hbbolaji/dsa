@@ -23,4 +23,13 @@ const fib_recursion = (fibo1 = 0, fibo2 = 1) => {
   fib_recursion(fibo2, fibo);
 };
 
-fib_recursion();
+// fib_recursion();
+
+const nth_fib = (n) => {
+  if (n <= 1) {
+    return n;
+  }
+  return nth_fib(n - 1) + nth_fib(n - 2);
+};
+
+console.log(nth_fib(19));

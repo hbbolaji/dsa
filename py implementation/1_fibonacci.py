@@ -20,4 +20,12 @@ def fib_recursion(fibo1= 0, fibo2=1):
   count += 1
   fibo = fib_recursion(fibo2, fibo)
 
-fib_recursion()
+# fib_recursion()
+
+def nth_fib(n):
+    if n <= 1:
+        return n
+    else:
+        return nth_fib(n - 1) + nth_fib(n - 2)
+
+print(nth_fib(19))
